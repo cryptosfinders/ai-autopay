@@ -1,0 +1,21 @@
+{
+  "name": "arc-usdc-ai-autopay-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent": "tsx agent/index.ts",
+    "web": "npx serve web -l 5173"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "viem": "^2.21.25",
+    "zod": "^3.23.8",
+    "dayjs": "^1.11.13"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.2",
+    "@types/node": "^22.7.7"
+  }
+}

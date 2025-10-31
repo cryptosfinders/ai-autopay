@@ -1,0 +1,7 @@
+[
+  {
+    "planId": 1,
+    "rule": "every 1 day if always",
+    "maxPerRun": 1
+  }
+]

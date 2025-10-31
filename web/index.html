@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arc USDC Autopay (Demo)</title>
+  </head>
+  <body>
+    <h1>Arc USDC Autopay (Demo)</h1>
+    <button id="connect">Connect Wallet (Arc Testnet)</button>
+    <div id="account"></div>
+
+    <h2>Create Plan</h2>
+    <label>Payee: <input id="payee" placeholder="0x..." /></label><br/>
+    <label>Amount (USDC): <input id="amount" placeholder="1.23" /></label><br/>
+    <label>Interval (seconds): <input id="interval" value="60" /></label><br/>
+    <button id="create">Create Plan</button>
+
+    <h2>Settle If Due</h2>
+    <label>Plan ID: <input id="planId" value="1" /></label>
+    <button id="settle">Settle</button>
+
+    <pre id="log"></pre>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
