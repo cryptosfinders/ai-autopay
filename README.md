@@ -1,11 +1,11 @@
 
-# Arc + USDC AI Autopayments Demo
+# USDC AI Autopayments
 
-An end‑to‑end prototype for the **USDC x Arc Hackathon** that shows AI‑driven, rule‑based payments on **Arc Testnet** (EVM L1 with **USDC as native gas**).
+An end‑to‑end prototype that shows AI‑driven, rule‑based payments on **Arc Testnet** (EVM L1 with **USDC as native gas**).
 
 **What it includes**
 
-- **Solidity smart contract** (`Autopay.sol`) using native USDC (the chain gas) for subscriptions/conditional payouts.
+- **Solidity smart contract** (`Autopay.sol`) using native USDC (the chain gas) for payouts.
 - **Foundry scripts** to deploy to Arc Testnet.
 - **Node.js AI Agent** (`agent/`) that evaluates natural‑language rules and executes on‑chain payments via the contract.
 - **Tiny Web UI** (`web/`) to create/view subscriptions from a wallet on Arc Testnet.
@@ -104,12 +104,7 @@ deployments/arc-testnet.json   # auto‑generated on deploy
 
 ## Security & production
 
-This is a hackathon demo. If you intend to go further:
-- Add reentrancy guards and full event indexing.
-- Add per‑payer spending limits & allow‑lists.
-- Consider account abstraction + session keys.
-- Expand oracle coverage and robust rule evaluation.
-- Formalize upgradeability & pause/kill switches.
+This is a demo.
 
 ---
 
